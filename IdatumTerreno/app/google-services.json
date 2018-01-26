@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "968023532300",
+    "firebase_url": "https://idatumterreno-798e5.firebaseio.com",
+    "project_id": "idatumterreno-798e5",
+    "storage_bucket": "idatumterreno-798e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968023532300:android:e7d26a96f0dfe503",
+        "android_client_info": {
+          "package_name": "cl.idatum.idatumterreno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968023532300-ia9cviuen0ko85lqe2spjfbr0je6aauh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW35EBXEPHaiIrzMbNfaxrJWqG56tLRU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

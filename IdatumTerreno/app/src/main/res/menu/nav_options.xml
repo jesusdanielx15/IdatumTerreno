@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mapFrag"
+            android:icon="@drawable/ic_action_mapas"
+            android:title="Mapa" />
+    </group>
+    <item android:title="Local">
+        <menu>
+            <item
+                android:id="@+id/osmDownload"
+                android:icon="@drawable/ic_action_mapas"
+                android:title="Mapas Offline" />
+
+            <item
+                android:id="@+id/contenidos_guardados"
+                android:icon="@drawable/ic_action_archive_dark"
+                android:title="Ver contenidos locales" />
+            <item
+                android:id="@+id/cambios_estados"
+                android:icon="@drawable/ic_action_estados"
+                android:title="Cambios de Estados" />
+
+        </menu>
+    </item>
+
+    <item android:title="Sistema">
+        <menu>
+            <item
+                android:id="@+id/login"
+                android:icon="@drawable/ic_action_account"
+                android:title="Login" />
+            <item
+                android:id="@+id/configBusqueda"
+                android:icon="@drawable/ic_action_config"
+                android:title="Configuraciones" />
+            <item
+                android:id="@+id/menu_cerrar"
+                android:icon="@drawable/ic_action_exit"
+                android:title="Cerrar sesion" />
+        </menu>
+    </item>
+</menu>

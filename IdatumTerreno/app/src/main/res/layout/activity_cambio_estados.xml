@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cl.idatum.idatumterreno.activities.CambioEstados">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar"></include>
+
+    <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+        android:id="@+id/realmRecyclerContenidos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:rrvEmptyLayoutId="@layout/vista_vacia"
+        app:rrvLayoutType="LinearLayout"
+        app:rrvSwipeToDelete="false"></co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView>
+
+
+</LinearLayout>

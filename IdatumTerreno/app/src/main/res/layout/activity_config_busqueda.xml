@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configBusqueda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.idatum.idatumterreno.activities.ConfigBusqueda">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/mostrarUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/url_del_sistema"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/appbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/mostrarUrl"
+        android:background="@drawable/button_background"
+        android:text="Actualizar"
+        android:textSize="8sp" />
+
+
+    <TextView
+        android:id="@+id/idPortalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccionar id del portal" />
+
+    <Spinner
+        android:id="@+id/idPortal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idPortalText" />
+
+    <TextView
+        android:id="@+id/idTipoContText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idPortal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccionar id de tipo de contenido" />
+
+    <Spinner
+        android:id="@+id/idTipoCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idTipoContText" />
+
+    <TextView
+        android:id="@+id/idRelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTipoCont"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccionar id de relacion" />
+
+    <Spinner
+        android:id="@+id/idRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idRelText" />
+
+
+    <TextView
+        android:id="@+id/idMapaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idRel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Seleccionar id de mapa" />
+
+    <Spinner
+        android:id="@+id/idMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idMapaText" />
+
+    <Button
+        android:id="@+id/guardarConfiguracion"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/idMapa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:text="Guardar Configuracion" />
+
+
+</RelativeLayout>

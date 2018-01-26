@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/blanco"
+    android:elevation="6dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/botonCerrarPopUp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cerrar_capas_mapa" />
+
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/botonCerrarPopUp"
+            android:layout_centerHorizontal="true"
+            android:spinnerMode="dialog" />
+
+        <ListView
+            android:id="@+id/wmsList"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/simpleSpinner"></ListView>
+    </RelativeLayout>
+</LinearLayout>
